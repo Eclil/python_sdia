@@ -8,7 +8,7 @@
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook"
     },
-    "workbench.sideBar.location": "right",
+    "workbench.sideBar.location": "left",
     "workbench.statusBar.visible": true,
     // Files
     "files.insertFinalNewline": true,
@@ -34,10 +34,17 @@
     "editor.tabSize": 4,
     "editor.tokenColorCustomizations": null,
     "editor.wordWrap": "bounded",
-    "editor.quickSuggestions": true,
+    "editor.quickSuggestions": {
+        "comments": "on",
+        "strings": "on",
+        "other": "on"
+    },
     // Terminal
     // "terminal.integrated.inheritEnv": false,
     "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.env.windows": {
+        "PYTHONPATH": "${C:/Users/Jp190/Documents/Centrale Lille/S9/SDI/Python/python_sdia}/."
+    },
     // "terminal.integrated.fontFamily": "Meslo LG L DZ for Powerline",
     // Intellicode
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
@@ -59,8 +66,8 @@
         "editor.wordWrapColumn": 80,
     },
     "python.languageServer": "Pylance",
-    // "python.condaPath": "~/opt/anaconda3/bin/anaconda",
-    // "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
+    "python.condaPath": "~/opt/anaconda3/bin/anaconda",
+    "python.defaultInterpreterPath": "C:/Users/Jp190/AppData/Local/Microsoft/WindowsApps/python.exe",
     "python.formatting.provider": "black",
     "python.linting.enabled": true,
     "python.linting.lintOnSave": true,
@@ -70,11 +77,12 @@
     // Markdown
     "[markdown]": {
         "editor.tabSize": 2,
-        "editor.quickSuggestions": true,
+        "editor.quickSuggestions": {
+            "comments": "on",
+            "strings": "on",
+            "other": "on"
+        },
     },
-    // RestructuredText
-    "restructuredtext.confPath": "${workspaceFolder}/docs",
-    "restructuredtext.languageServer.disabled": true,
     // TOML
     "[toml]": {
         "editor.defaultFormatter": "tamasfe.even-better-toml"
@@ -85,7 +93,12 @@
     "python.testing.pytestArgs": [
         "tests"
     ],
-    "python.testing.unittestEnabled": false,
+    "python.testing.unittestEnabled": true,
     // "python.testing.nosetestsEnabled": false,
     "python.testing.pytestEnabled": true,
+    "python.analysis.extraPaths": [
+        "./Labs/Lab1/src",
+        "./Labs/Lab1/src/tutorial"
+    ],
+    "python.envFile": ".env",
 }
