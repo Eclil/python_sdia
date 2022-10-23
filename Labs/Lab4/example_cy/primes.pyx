@@ -17,4 +17,5 @@ def cprimes(int kmax):
             k = k + 1
             result.append(n)
         n = n + 1
+    print(result)
     #return result
